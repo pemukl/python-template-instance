@@ -1,0 +1,10 @@
+services:
+  python_boilerplate:
+    env_file:
+      - .env
+    environment:
+      - ENV_NAME=prod
+    image: 'python_boilerplate:latest'
+    build:
+      context: .
+    tty: true
